@@ -21,7 +21,6 @@ int main(void)
 
     int result = recursive_series(n);
     printf("%d\n", result);
-    scanf("%d", &n);
 
     return 0;
 }
