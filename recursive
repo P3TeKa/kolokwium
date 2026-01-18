@@ -14,7 +14,7 @@ int recursive_series(int n)
         
 }
 
-int main(void)
+int main()
 {
     int n=0;
     scanf("%d", &n);
