@@ -6,9 +6,12 @@ int recursive_series(int n)
         return 1;
 
     if (n % 2 == 0)
-        return 1 + recursive_series((n / 2) + 2);
+        return 1 + recursive_series(n / 2) + 2;
+        
+    
     else
-        return 1 + recursive_series((n - 1) * 3);
+        return 1 + recursive_series(n - 1) * 3;
+        
 }
 
 int main(void)
@@ -18,6 +21,7 @@ int main(void)
 
     int result = recursive_series(n);
     printf("%d\n", result);
+    scanf("%d", &n);
 
     return 0;
 }
